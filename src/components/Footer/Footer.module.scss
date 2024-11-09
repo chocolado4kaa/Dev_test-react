@@ -1,0 +1,133 @@
+footer {
+  height: 400px;
+  background: #212322;
+  position: relative;
+  overflow: hidden;
+  &::before, &::after{
+    position: absolute;
+    content: " ";
+    background: url("src/assets/Rectangle_withCircles.svg");
+    width: 270px;
+    height: 270px;
+    background-size: contain;
+    opacity: 0.6;
+  }
+  &::before{
+    left: 5%;
+    bottom: -170px;
+    transform: rotate(-5deg);
+  }
+  &::after{
+    right: -60px;
+    bottom: -60px;
+    transform: rotate(43deg);
+  }
+  p, a{
+    color: #F1F1F1;
+    text-decoration: none;
+    outline: none;
+    margin: 0px;
+  }
+  a{
+    transition: all 0.5s;
+    &:hover{
+      transform: scale(0.99);
+      opacity: 0.5;
+    }
+  }
+  .footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    .top-part {
+      height: 140px;
+      width: 90%;
+    }
+    .bot-part{
+      width: 90%;
+      height: 110px;
+    }
+  }
+}
+
+.Footer-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.bot-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  .white-logo{
+    display: block;
+    text-decoration: none;
+    height: 66px;
+    width: 264px;;
+    background-size: contain;
+    background: url("src/assets/Logo/Text/White.png");
+    transition: all 0.5s;
+  }
+}
+
+.frame{
+  width: 20%;
+  height: max-content;
+  .title{
+    padding: 0px;
+    margin: 10px 0px;
+  }
+  .list{
+    ul{
+      padding: 0px;
+      margin: 0px;
+      li{
+        list-style-type: none;
+        margin: 4px 0;
+    }
+  } 
+}
+}
+
+input{
+  background: none;
+  border-width: 0px 0px 1px;
+  outline: none;
+  inline-size: -webkit-fill-available;
+  border-color: #E3E3E3;
+  color: #E3E3E3;
+}
+
+.media{
+  display: flex;
+  margin-top: 24px;
+  a{
+    width: 24px;
+    height: 24px;
+    background-size: contain !important;
+    margin-right: 10px;
+    transition: all 0.5s;
+    &:hover{
+      opacity: 0.5;
+      transform: scale(0.99);
+    }
+  }
+  .linkedId{
+    background: url("src/assets/media_links/ri_linkedin-fill.svg") no-repeat center center;
+  }
+  .facebook{
+    background: url("src/assets/media_links/uil_facebook-f.svg") no-repeat center center;
+  }
+  .inst{
+    background: url("src/assets/media_links/ri_instagram-fill.svg") no-repeat center center;
+  }
+}

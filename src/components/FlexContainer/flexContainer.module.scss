@@ -1,0 +1,55 @@
+.hero-section .container {
+  margin-left: 10%;
+}
+
+.FlexContainer {
+  width: 77%;
+  margin: 0 auto;
+  padding: 25px 0;
+  max-width: 1100px;
+  .AboutUs_Frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .FlexWrap {
+    display: flex;
+    padding: 25px 0;
+    justify-content: space-between;
+    align-items: stretch;
+    .title h2 {
+      margin: 0 0 20px;
+    }
+    .content p {
+      margin: 0px;
+      &:not(:last-child) {
+        margin: 0 0 20px;
+      }
+    }
+    &.row {
+      flex-direction: row;
+    }
+    &.row-reverse {
+      flex-direction: row-reverse;
+      .title h2{
+        text-align: center;
+      }
+    }
+    .TextBlock,
+    .ImageBlock {
+      width: 47%;
+    }
+    .TextBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .ImageBlock {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
