@@ -15,9 +15,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Load Data
-        run: npx json-server Data.json
-
       - name: Build the app
         run: npm run build
 
