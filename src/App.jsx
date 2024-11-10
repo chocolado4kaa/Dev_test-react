@@ -10,10 +10,10 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/Dev_test-react/" element={<Root />} />
-          <Route path="/Dev_test-react/About" element={<AboutUs />} />
-          <Route path="/Dev_test-react/Contacts" element={<ContactUs />} />
-          <Route path="/Dev_test-react/Collection" element={<CollectionPage />} />
-          <Route path="/Dev_test-react/item/:id" element={<ItemDetails />} />
+          <Route path="/Dev_test-react/About/" element={<AboutUs />} />
+          <Route path="/Dev_test-react/Contacts/" element={<ContactUs />} />
+          <Route path="/Dev_test-react/Collection/" element={<CollectionPage />} />
+          <Route path="/Dev_test-react/item/:id/" element={<ItemDetails />} />
         </Routes>
       </Router>
   );
