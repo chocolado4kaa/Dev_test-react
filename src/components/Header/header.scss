@@ -120,7 +120,7 @@
       height: 100%;
       width: 100%;
       background-size: contain;
-      background: url("/public/Logo/Text/Black.png");
+      background: url("/Dev_test-react/Logo/Text/Black.png");
       transition: all 0.5s;
       &:hover {
         transform: scaleX(1.05);
@@ -152,10 +152,10 @@
       }
     }
     .cart {
-      background: url("/public/Ic_Cart.svg");
+      background: url("/Dev_test-react/Ic_Cart.svg");
     }
     .user {
-      background: url("/public/Ic_User.svg");
+      background: url("/Dev_test-react/Ic_User.svg");
     }
     button {
       position: relative;
@@ -187,7 +187,7 @@
   }
   .header-part {
     .search {
-      background: url("/public/Ic_Search.svg");
+      background: url("/Dev_test-react/Ic_Search.svg");
     }
   }
 }
@@ -257,7 +257,7 @@
       height: 30px;
       margin: 0 20px;
       .burger {
-        background: url("/public/IC_Burger.svg");
+        background: url("/Dev_test-react/IC_Burger.svg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
