@@ -35,19 +35,19 @@ const Header = () => {
           <div className="header-part left-part">
             {!isMobile ? (
               <ul>
-                <HeaderHref Href="/Dev_test-react/Collection?type=long-sleeve/" Class="p2">
+                <HeaderHref Href="/Dev_test-react/Collection?type=long-sleeve" Class="p2">
                   Crew Necks
                 </HeaderHref>
-                <HeaderHref Href="Dev_test-react/Collection?type=t-short/" Class="p2">
+                <HeaderHref Href="Dev_test-react/Collection?type=t-short" Class="p2">
                   V-Necks
                 </HeaderHref>
                 <HeaderHref
-                  Href="/Dev_test-react/Collection?type=long-sleeve%2Ct-short/"
+                  Href="/Dev_test-react/Collection?type=long-sleeve%2Ct-short"
                   Class="p2"
                 >
                   Activewear
                 </HeaderHref>
-                <HeaderHref Href="/Dev_test-react/Collection?color=other/" Class="p2">
+                <HeaderHref Href="/Dev_test-react/Collection?color=other" Class="p2">
                   Bundles
                 </HeaderHref>
                 <MoreDiv Class="p2" />
@@ -194,16 +194,16 @@ const BurgerMenu = ({ OnClick }) => {
       >
         <div className="burger"></div>
         <ul className="burger_list">
-          <HeaderHref Href="/Dev_test-react/Collection?type=long-sleeve/" Class="p2">
+          <HeaderHref Href="/Dev_test-react/Collection?type=long-sleeve" Class="p2">
             Crew Necks
           </HeaderHref>
-          <HeaderHref Href="/Dev_test-react/Collection?type=t-short/" Class="p2">
+          <HeaderHref Href="/Dev_test-react/Collection?type=t-short" Class="p2">
             V-Necks
           </HeaderHref>
-          <HeaderHref Href="/Dev_test-react/Collection?type=long-sleeve%2Ct-short/" Class="p2">
+          <HeaderHref Href="/Dev_test-react/Collection?type=long-sleeve%2Ct-short" Class="p2">
             Activewear
           </HeaderHref>
-          <HeaderHref Href="/Dev_test-react/Collection?color=other/" Class="p2">
+          <HeaderHref Href="/Dev_test-react/Collection?color=other" Class="p2">
             Bundles
           </HeaderHref>
           <HeaderHref Href="/Dev_test-react/About/" Class="p2">
