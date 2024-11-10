@@ -5,7 +5,7 @@
       "discount": 60,
       "sellingFast": false,
       "soldout": false,
-      "preview": "../src/assets/items_preview/BLACK_SS_AO-Curve-5_768x_crop_center@2x1.png",
+      "preview": "/public/items_preview/BLACK_SS_AO-Curve-5_768x_crop_center@2x1.png",
       "title": "AO Elongated Tee",
       "price": 54,
       "sizes": ["S", "M", "L", "2XL", "4XL"],
@@ -13,14 +13,14 @@
       "color": "black",
       "description": "Elevate your style with our famous Crew Elongated t-shirt. Enjoy the reliability of a simple Crew collar and our custom PYCA Pro® fabric giving this CUT a modern feel.\n The elongated hem is perfect for taller customers who want the added length without sizing up and losing the trim fit they know and love.",
       "features": "PYCA Pro®\n62% polyester, 33% cotton, & 5% spandex\nMachine wash cold\nWash with like colors\nTumble dry low\nDo not iron",
-      "otherPhotos": ["../src/assets/items_preview/BLACK-CREW-CURVE_768x_crop_center@2x1.png", "../src/assets/items_preview/4000_CARBON_2_71.png"]
+      "otherPhotos": ["/public/items_preview/BLACK-CREW-CURVE_768x_crop_center@2x1.png", "/public/items_preview/4000_CARBON_2_71.png"]
     },
     {
       "id": "1",
       "discount": 20,
       "sellingFast": true,
       "soldout": false,
-      "preview": "../src/assets/items_preview/BLACK_SS_AO-Curve-5_768x_crop_center@2x1.png",
+      "preview": "/public/items_preview/BLACK_SS_AO-Curve-5_768x_crop_center@2x1.png",
       "title": "AO Elongated Tee",
       "price": 54,
       "sizes": ["S", "M", "XL", "4XL"],
@@ -28,14 +28,14 @@
       "color": "black",
       "description": "Elevate your style with our famous Crew Elongated t-shirt. Enjoy the reliability of a simple Crew collar and our custom PYCA Pro® fabric giving this CUT a modern feel.\n The elongated hem is perfect for taller customers who want the added length without sizing up and losing the trim fit they know and love.",
       "features": "PYCA Pro®\n62% polyester, 33% cotton, & 5% spandex\nMachine wash cold\nWash with like colors\nTumble dry low\nDo not iron",
-      "otherPhotos": ["../src/assets/items_preview/BLACK-CREW-CURVE_768x_crop_center@2x1.png", "../src/assets/items_preview/4000_CARBON_2_71.png"]
+      "otherPhotos": ["/public/items_preview/BLACK-CREW-CURVE_768x_crop_center@2x1.png", "/public/items_preview/4000_CARBON_2_71.png"]
     },
     {
       "id": "2",
       "discount": 0,
       "sellingFast": true,
       "soldout": false,
-      "preview": "../src/assets/items_preview/COLOR_3PACK_1.png",
+      "preview": "/public/items_preview/COLOR_3PACK_1.png",
       "title": "The Color 3-Pack",
       "price": 154,
       "sizes": ["S", "XL", "3XL", "4XL"],
@@ -50,7 +50,7 @@
       "discount": 20,
       "sellingFast": false,
       "soldout": false,
-      "preview": "../src/assets/items_preview/COLOR_3PACK_1.png",
+      "preview": "/public/items_preview/COLOR_3PACK_1.png",
       "title": "The Color 3-Pack",
       "price": 154,
       "sizes": ["S", "M", "L", "XL", "4XL"],
@@ -65,7 +65,7 @@
       "discount": 20,
       "sellingFast": false,
       "soldout": false,
-      "preview": "../src/assets/items_preview/BLACK-CREW-CURVE_768x_crop_center@2x1.png",
+      "preview": "/public/items_preview/BLACK-CREW-CURVE_768x_crop_center@2x1.png",
       "title": "AO Elongated Tee",
       "price": 54,
       "sizes": ["L", "M", "L", "4XL"],
@@ -73,14 +73,14 @@
       "color": "black",
       "description": "Elevate your style with our famous Crew Elongated t-shirt. Enjoy the reliability of a simple Crew collar and our custom PYCA Pro® fabric giving this CUT a modern feel.\n The elongated hem is perfect for taller customers who want the added length without sizing up and losing the trim fit they know and love.",
       "features": "PYCA Pro®\n62% polyester, 33% cotton, & 5% spandex\nMachine wash cold\nWash with like colors\nTumble dry low\nDo not iron",
-      "otherPhotos": ["../src/assets/items_preview/BLACK_SS_AO-Curve-5_768x_crop_center@2x1.png"]
+      "otherPhotos": ["/public/items_preview/BLACK_SS_AO-Curve-5_768x_crop_center@2x1.png"]
     },
     {
       "id": "5",
       "discount": 20,
       "sellingFast": false,
       "soldout": true,
-      "preview": "../src/assets/items_preview/BLACK-CREW-CURVE_768x_crop_center@2x1.png",
+      "preview": "/public/items_preview/BLACK-CREW-CURVE_768x_crop_center@2x1.png",
       "title": "AO Elongated Tee",
       "price": 54,
       "sizes": [],
@@ -88,14 +88,14 @@
       "color": "black",
       "description": "Elevate your style with our famous Crew Elongated t-shirt. Enjoy the reliability of a simple Crew collar and our custom PYCA Pro® fabric giving this CUT a modern feel.\n The elongated hem is perfect for taller customers who want the added length without sizing up and losing the trim fit they know and love.",
       "features": "PYCA Pro®\n62% polyester, 33% cotton, & 5% spandex\nMachine wash cold\nWash with like colors\nTumble dry low\nDo not iron",
-      "otherPhotos": ["../src/assets/items_preview/BLACK_SS_AO-Curve-5_768x_crop_center@2x1.png"]
+      "otherPhotos": ["/public/items_preview/BLACK_SS_AO-Curve-5_768x_crop_center@2x1.png"]
     },
     {
       "id": "6",
       "discount": 0,
       "sellingFast": true,
       "soldout": false,
-      "preview": "../src/assets/items_preview/GRANITE-CURVE-HEM-2_768x_crop_center@2x1.png",
+      "preview": "/public/items_preview/GRANITE-CURVE-HEM-2_768x_crop_center@2x1.png",
       "title": "AO Elongated Tee",
       "price": 54,
       "sizes": ["S", "L", "XL", "4XL"],
@@ -103,14 +103,14 @@
       "color": "granite",
       "description": "Elevate your style with our famous Crew Elongated t-shirt. Enjoy the reliability of a simple Crew collar and our custom PYCA Pro® fabric giving this CUT a modern feel.\n The elongated hem is perfect for taller customers who want the added length without sizing up and losing the trim fit they know and love.",
       "features": "PYCA Pro®\n62% polyester, 33% cotton, & 5% spandex\nMachine wash cold\nWash with like colors\nTumble dry low\nDo not iron",
-      "otherPhotos": ["../src/assets/items_preview/09.08_STAPLES_RESHOOT_002_GRANITE_CURVE3094_1.png"]
+      "otherPhotos": ["/public/items_preview/09.08_STAPLES_RESHOOT_002_GRANITE_CURVE3094_1.png"]
     },
     {
       "id": "7",
       "discount": 20,
       "sellingFast": false,
       "soldout": true,
-      "preview": "../src/assets/items_preview/GRANITE-CURVE-HEM-2_768x_crop_center@2x1.png",
+      "preview": "/public/items_preview/GRANITE-CURVE-HEM-2_768x_crop_center@2x1.png",
       "title": "AO Elongated Tee",
       "price": 54,
       "sizes": [],
@@ -118,7 +118,7 @@
       "color": "granite",
       "description": "Elevate your style with our famous Crew Elongated t-shirt. Enjoy the reliability of a simple Crew collar and our custom PYCA Pro® fabric giving this CUT a modern feel.\n The elongated hem is perfect for taller customers who want the added length without sizing up and losing the trim fit they know and love.",
       "features": "PYCA Pro®\n62% polyester, 33% cotton, & 5% spandex\nMachine wash cold\nWash with like colors\nTumble dry low\nDo not iron",
-      "otherPhotos": ["../src/assets/items_preview/09.08_STAPLES_RESHOOT_002_GRANITE_CURVE3094_1.png"]
+      "otherPhotos": ["/public/items_preview/09.08_STAPLES_RESHOOT_002_GRANITE_CURVE3094_1.png"]
       
     },
     {
@@ -126,7 +126,7 @@
       "discount": 20,
       "sellingFast": true,
       "soldout": false,
-      "preview": "../src/assets/items_preview/4000_CARBON_2_71.png",
+      "preview": "/public/items_preview/4000_CARBON_2_71.png",
       "title": "Heather Navy Crew Neck T-Shirt",
       "price": 67,
       "sizes": ["M", "L", "2XL", "3XL"],
@@ -134,14 +134,14 @@
       "color": "carbon",
       "description": "The men's t-shirt crew-neck collection offers a range of stylish and comfortable t-shirts designed specifically for men.\nThe t-shirts are crafted with high-quality materials to ensure durability and a soft feel against the skin. Whether you're looking for a casual everyday t-shirt or something more versatile, the men's t-shirt crew-neck collection provides a variety of options to choose from.",
       "features": "PYCA Pro®\n62% polyester, 33% cotton, & 5% spandex\nMachine wash cold\nWash with like colors\nTumble dry low\nDo not iron",
-      "otherPhotos": ["../src/assets/items_preview/BLACK_SS_AO-Curve-5_768x_crop_center@2x1.png"]
+      "otherPhotos": ["/public/items_preview/BLACK_SS_AO-Curve-5_768x_crop_center@2x1.png"]
     },
     {
       "id": "9",
       "discount": 50,
       "sellingFast": true,
       "soldout": true,
-      "preview": "../src/assets/items_preview/09.08_STAPLES_RESHOOT_002_GRANITE_CURVE3094_1.png",
+      "preview": "/public/items_preview/09.08_STAPLES_RESHOOT_002_GRANITE_CURVE3094_1.png",
       "title": "AO Elongated Tee",
       "price": 54,
       "sizes": [],
@@ -149,14 +149,14 @@
       "color": "granite",
       "description": "Elevate your style with our famous Crew Elongated t-shirt. Enjoy the reliability of a simple Crew collar and our custom PYCA Pro® fabric giving this CUT a modern feel.\n The elongated hem is perfect for taller customers who want the added length without sizing up and losing the trim fit they know and love.",
       "features": "PYCA Pro®\n62% polyester, 33% cotton, & 5% spandex\nMachine wash cold\nWash with like colors\nTumble dry low\nDo not iron",
-      "otherPhotos": ["../src/assets/items_preview/GRANITE-CURVE-HEM-2_768x_crop_center@2x1.png"]
+      "otherPhotos": ["/public/items_preview/GRANITE-CURVE-HEM-2_768x_crop_center@2x1.png"]
     },
     {
       "id": "10",
       "discount": 0,
       "sellingFast": false,
       "soldout": false,
-      "preview": "../src/assets/items_preview/HEATHER-GREY_LS_AO-Curve-2_768x_crop_center@2x.progressive.png",
+      "preview": "/public/items_preview/HEATHER-GREY_LS_AO-Curve-2_768x_crop_center@2x.progressive.png",
       "title": "AO Long Sleeve Curve-Hem Tee",
       "price": 64,
       "sizes": ["S", "M", "L", "XL", "2XL"],
@@ -164,14 +164,14 @@
       "color": "granite",
       "description": "The AO Long Sleeve Curve-Hem tee is our best-selling long-sleeve t-shirt, featuring our custom PYCA Pro® fabric and famous Signature-fit designed to elevate your style.\n From work to the weekend, this long-sleeve style will be 'Always On'. Features a Curve-Hem bottom cut designed to eliminate bunching around the hips to ensure a perfect fit.",
       "features": "PYCA Pro®\n62% polyester, 33% cotton, & 5% spandex\nMachine wash cold\nWash with like colors\nTumble dry low\nDo not iron",
-      "otherPhotos": ["../src/assets/items_preview/09.08_STAPLES_RESHOOT_002_BLACK_LS_CURVE3844_768x_crop_center.png"]
+      "otherPhotos": ["/public/items_preview/09.08_STAPLES_RESHOOT_002_BLACK_LS_CURVE3844_768x_crop_center.png"]
     },
     {
       "id": "11",
       "discount": 15,
       "sellingFast": true,
       "soldout": false,
-      "preview": "../src/assets/items_preview/HEATHER-GREY_LS_AO-Curve-2_768x_crop_center@2x.progressive.png",
+      "preview": "/public/items_preview/HEATHER-GREY_LS_AO-Curve-2_768x_crop_center@2x.progressive.png",
       "title": "AO Long Sleeve Curve-Hem Tee",
       "price": 64,
       "sizes": ["S", "2XL", "3XL"],
@@ -179,14 +179,14 @@
       "color": "granite",
       "description": "The AO Long Sleeve Curve-Hem tee is our best-selling long-sleeve t-shirt, featuring our custom PYCA Pro® fabric and famous Signature-fit designed to elevate your style.\n From work to the weekend, this long-sleeve style will be 'Always On'. Features a Curve-Hem bottom cut designed to eliminate bunching around the hips to ensure a perfect fit.",
       "features": "PYCA Pro®\n62% polyester, 33% cotton, & 5% spandex\nMachine wash cold\nWash with like colors\nTumble dry low\nDo not iron",
-      "otherPhotos": ["../src/assets/items_preview/09.08_STAPLES_RESHOOT_002_BLACK_LS_CURVE3844_768x_crop_center.png"]
+      "otherPhotos": ["/public/items_preview/09.08_STAPLES_RESHOOT_002_BLACK_LS_CURVE3844_768x_crop_center.png"]
     },
     {
       "id": "12",
       "discount": 5,
       "sellingFast": true,
       "soldout": false,
-      "preview": "../src/assets/items_preview/AO-LS-HEnley-Curve-Hem-Steel_768x_crop_center.png",
+      "preview": "/public/items_preview/AO-LS-HEnley-Curve-Hem-Steel_768x_crop_center.png",
       "title": "AO Long Sleeve Henley Curve-Hem",
       "price": 64,
       "sizes": ["S", "M", "XL", "2XL", "4XL"],
@@ -201,7 +201,7 @@
       "discount": 45,
       "sellingFast": true,
       "soldout": true,
-      "preview": "../src/assets/items_preview/AO-LS-HEnley-Curve-Hem-Steel_768x_crop_center.png",
+      "preview": "/public/items_preview/AO-LS-HEnley-Curve-Hem-Steel_768x_crop_center.png",
       "title": "AO Long Sleeve Henley Curve-Hem",
       "price": 64,
       "sizes": [],
@@ -216,7 +216,7 @@
       "discount": 30,
       "sellingFast": true,
       "soldout": false,
-      "preview": "../src/assets/items_preview/09.08_STAPLES_RESHOOT_002_BLACK_LS_CURVE3844_768x_crop_center.png",
+      "preview": "/public/items_preview/09.08_STAPLES_RESHOOT_002_BLACK_LS_CURVE3844_768x_crop_center.png",
       "title": "AO Long Sleeve Curve-Hem Tee",
       "price": 64,
       "sizes": ["S", "M", "XL", "2XL", "3XL"],
@@ -224,33 +224,33 @@
       "color": "black",
       "description": "The AO Long Sleeve Curve-Hem tee is our best-selling long-sleeve t-shirt, featuring our custom PYCA Pro® fabric and famous Signature-fit designed to elevate your style.\n From work to the weekend, this long-sleeve style will be 'Always On'. Features a Curve-Hem bottom cut designed to eliminate bunching around the hips to ensure a perfect fit.",
       "features": "PYCA Pro®\n62% polyester, 33% cotton, & 5% spandex\nMachine wash cold\nWash with like colors\nTumble dry low\nDo not iron",
-      "otherPhotos": ["../src/assets/items_preview/HEATHER-GREY_LS_AO-Curve-2_768x_crop_center@2x.progressive.png"]
+      "otherPhotos": ["/public/items_preview/HEATHER-GREY_LS_AO-Curve-2_768x_crop_center@2x.progressive.png"]
     }
   ],
 
   "advantages": [
     {
-      "preview": "../src/assets/Advantages/Ic_FlatteringFit.svg",
+      "preview": "/public/Advantages/Ic_FlatteringFit.svg",
       "title": "Flattering Fit"
     },
     {
-      "preview": "../src/assets/Advantages/Ic_EspeciallyFormulatedFabric.svg",
+      "preview": "/public/Advantages/Ic_EspeciallyFormulatedFabric.svg",
       "title": "Especially formulated fabric"
     },
     {
-      "preview": "../src/assets/Advantages/Ic_ButterySoft.svg",
+      "preview": "/public/Advantages/Ic_ButterySoft.svg",
       "title": "Buttery Soft"
     },
     {
-      "preview": "../src/assets/Advantages/Ic_FitAndColourRetention.svg",
+      "preview": "/public/Advantages/Ic_FitAndColourRetention.svg",
       "title": "Fit and colour retention"
     },
     {
-      "preview": "../src/assets/Advantages/Ic_Pre-Shrunk.svg",
+      "preview": "/public/Advantages/Ic_Pre-Shrunk.svg",
       "title": "Pre-Shrunk"
     },
     {
-      "preview": "../src/assets/Advantages/Ic_Durable.svg",
+      "preview": "/public/Advantages/Ic_Durable.svg",
       "title": "Durable"
     }
   ],
