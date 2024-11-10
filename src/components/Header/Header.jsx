@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./header.scss";
 import { Message } from "../Components";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -35,19 +36,19 @@ const Header = () => {
           <div className="header-part left-part">
             {!isMobile ? (
               <ul>
-                <HeaderHref Href="/Dev_test-react/Collection?type=long-sleeve" Class="p2">
+                <HeaderHref Href="/Collection?type=long-sleeve" Class="p2">
                   Crew Necks
                 </HeaderHref>
-                <HeaderHref Href="Dev_test-react/Collection?type=t-short" Class="p2">
+                <HeaderHref Href="/Collection?type=t-short" Class="p2">
                   V-Necks
                 </HeaderHref>
                 <HeaderHref
-                  Href="/Dev_test-react/Collection?type=long-sleeve%2Ct-short"
+                  Href="/Collection?type=long-sleeve%2Ct-short"
                   Class="p2"
                 >
                   Activewear
                 </HeaderHref>
-                <HeaderHref Href="/Dev_test-react/Collection?color=other" Class="p2">
+                <HeaderHref Href="/Collection?color=other" Class="p2">
                   Bundles
                 </HeaderHref>
                 <MoreDiv Class="p2" />
@@ -57,11 +58,11 @@ const Header = () => {
             )}
           </div>
           <div className="nav_logo">
-            <a href="/Dev_test-react/" className="Focused_logo"></a>
+            <Link to="/" className="Focused_logo"></Link>
           </div>
           <div className="header-part right-part">
             <ul>
-              <HeaderHref Href="/Dev_test-react/Collection/" Class="cart" />
+              <HeaderHref Href="/Collection/" Class="cart" />
               <HeaderHref
                 onClick={() => HandleShowModal("Error: Page Not Found")}
                 Class="search"
@@ -98,9 +99,9 @@ const HeaderHref = ({ Href, Class, children, onClick }) => {
   return (
     <li>
       {hasHref ? (
-        <a href={Href} className={Class}>
+        <Link to={Href} className={Class}>
           {children}
-        </a>
+        </Link>
       ) : (
         <button onClick={handleClick} className={Class} title={Class}>
           {children}
@@ -165,15 +166,15 @@ const MoreDiv = ({ Class }) => {
       </HeaderHref>
       <div className={`more ${!hidden ? "shown" : ""}`}>
         <div className="list">
-          <a href="/Dev_test-react/About/" className={Class}>
+          <Link to="/About/" className={Class}>
             About Us
-          </a>
-          <a href="/Dev_test-react/Contacts/" className={Class}>
+          </Link>
+          <Link to="/Contacts/" className={Class}>
             Contact Us
-          </a>
-          <a href="/Dev_test-react/Collection/" className={Class}>
+          </Link>
+          <Link to="/Collection/" className={Class}>
             Collection
-          </a>
+          </Link>
         </div>
       </div>
     </>
@@ -194,25 +195,25 @@ const BurgerMenu = ({ OnClick }) => {
       >
         <div className="burger"></div>
         <ul className="burger_list">
-          <HeaderHref Href="/Dev_test-react/Collection?type=long-sleeve" Class="p2">
+          <HeaderHref Href="/Collection?type=long-sleeve" Class="p2">
             Crew Necks
           </HeaderHref>
-          <HeaderHref Href="/Dev_test-react/Collection?type=t-short" Class="p2">
+          <HeaderHref Href="/Collection?type=t-short" Class="p2">
             V-Necks
           </HeaderHref>
-          <HeaderHref Href="/Dev_test-react/Collection?type=long-sleeve%2Ct-short" Class="p2">
+          <HeaderHref Href="/Collection?type=long-sleeve%2Ct-short" Class="p2">
             Activewear
           </HeaderHref>
-          <HeaderHref Href="/Dev_test-react/Collection?color=other" Class="p2">
+          <HeaderHref Href="/Collection?color=other" Class="p2">
             Bundles
           </HeaderHref>
-          <HeaderHref Href="/Dev_test-react/About/" Class="p2">
+          <HeaderHref Href="/About/" Class="p2">
             About Us
           </HeaderHref>
-          <HeaderHref Href="/Dev_test-react/Contacts/" Class="p2">
+          <HeaderHref Href="/Contacts/" Class="p2">
             Contact Us
           </HeaderHref>
-          <HeaderHref Href="/Dev_test-react/Collection/" Class="p2">
+          <HeaderHref Href="/Collection/" Class="p2">
             Collection
           </HeaderHref>
         </ul>
