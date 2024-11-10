@@ -57,7 +57,7 @@ const Header = () => {
             )}
           </div>
           <div className="nav_logo">
-            <a href="/" className="Focused_logo"></a>
+            <a href="/Dev_test-react/" className="Focused_logo"></a>
           </div>
           <div className="header-part right-part">
             <ul>
