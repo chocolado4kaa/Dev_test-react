@@ -108,7 +108,7 @@
 }
 
 .focused-Logo {
-  background: url("src/assets/Logo/Text/Black.png") no-repeat center center;
+  background: url("./src/assets/Logo/Text/Black.png") no-repeat center center;
   background-size: contain;
   width: 250px;
   height: 60px;
@@ -143,7 +143,7 @@
     top: 50%;
     transform: translateY(-50%) scale(0.99);
     right: 10px;
-    background: url("src/assets/Ic_Arrow_Right.svg");
+    background: url("./src/assets/Ic_Arrow_Right.svg");
     height: 25px;
     width: 25px;
     transition: all 0.3s;

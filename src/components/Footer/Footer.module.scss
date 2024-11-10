@@ -6,7 +6,7 @@ footer {
   &::before, &::after{
     position: absolute;
     content: " ";
-    background: url("src/assets/Rectangle_withCircles.svg");
+    background: url("./src/assets/Rectangle_withCircles.svg");
     width: 270px;
     height: 270px;
     background-size: contain;
@@ -74,7 +74,7 @@ footer {
     height: 66px;
     width: 264px;;
     background-size: contain;
-    background: url("src/assets/Logo/Text/White.png");
+    background: url("./src/assets/Logo/Text/White.png");
     transition: all 0.5s;
   }
 }
@@ -122,12 +122,12 @@ input{
     }
   }
   .linkedId{
-    background: url("src/assets/media_links/ri_linkedin-fill.svg") no-repeat center center;
+    background: url("./src/assets/media_links/ri_linkedin-fill.svg") no-repeat center center;
   }
   .facebook{
-    background: url("src/assets/media_links/uil_facebook-f.svg") no-repeat center center;
+    background: url("./src/assets/media_links/uil_facebook-f.svg") no-repeat center center;
   }
   .inst{
-    background: url("src/assets/media_links/ri_instagram-fill.svg") no-repeat center center;
+    background: url("./src/assets/media_links/ri_instagram-fill.svg") no-repeat center center;
   }
 }
