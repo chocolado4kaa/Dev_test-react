@@ -152,10 +152,10 @@
       }
     }
     .cart {
-      background: url("./src/assets/Ic_Cart.svg");
+      background: url("/public/Ic_Cart.svg");
     }
     .user {
-      background: url("./src/assets/Ic_User.svg");
+      background: url("/public/Ic_User.svg");
     }
     button {
       position: relative;
@@ -187,7 +187,7 @@
   }
   .header-part {
     .search {
-      background: url("./src/assets/Ic_Search.svg");
+      background: url("/public/Ic_Search.svg");
     }
   }
 }
@@ -257,7 +257,7 @@
       height: 30px;
       margin: 0 20px;
       .burger {
-        background: url("./src/assets/IC_Burger.svg") no-repeat center center;
+        background: url("/public/IC_Burger.svg") no-repeat center center;
         background-size: contain;
         cursor: pointer;
         transition: all 0.5s;

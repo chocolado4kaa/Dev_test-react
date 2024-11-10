@@ -20,7 +20,7 @@
     &::before {
       position: absolute;
       content: " ";
-      background: url("./src/assets/Ic_Arrow_Right.svg");
+      background: url("/public/Ic_Arrow_Right.svg");
       right: 0px;
       bottom: 45%;
       transform: translateY(50%);
@@ -57,13 +57,13 @@
     left: -6px;
     width: 12px;
     height: 12px;
-    background: url("./src/assets/Title_Arrow.svg") no-repeat left center;
+    background: url("/public/Title_Arrow.svg") no-repeat left center;
   }
   &::after {
     right: -4px;
     width: 9px;
     height: 16px;
-    background: url("./src/assets/Title_Arrow.svg") no-repeat right center;
+    background: url("/public/Title_Arrow.svg") no-repeat right center;
   }
 }
 
