@@ -96,7 +96,7 @@ const ItemsWrap = ({ items }) => {
   const navigate = useNavigate();
 
   const goToItemDetails = (item) => {
-    navigate(`/item/${item.id}`);
+    navigate(`/Dev_test-react/item/${item.id}`);
   };
 
   return (

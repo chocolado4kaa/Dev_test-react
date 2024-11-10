@@ -22,7 +22,7 @@ const Item = ({
   const navigate = useNavigate();
 
   const goToItemDetails = (id) => {
-    navigate(`/item/${id}`, { replace: true });
+    navigate(`/Dev_test-react/item/${id}`, { replace: true });
     window.location.reload();
   };
 
