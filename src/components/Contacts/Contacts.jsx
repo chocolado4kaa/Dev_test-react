@@ -13,7 +13,7 @@ const Contacts = () => {
         </div>
         <Container
           className={classes.email}
-          image="/Dev_test-react/Contact/email1.svg"
+          image="/Dev_test-react/Contact/email1.svg" 
         >
           <p className="b2">For customer support: </p>
           <p className="b2">For sales inquiries: </p>
