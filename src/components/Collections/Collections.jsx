@@ -109,7 +109,7 @@ const Before = ({ Style }) => {
       </div>
       <div className="image">
         <img
-          src="src/assets/Collections/OtherBrands.png"
+          src="/Dev_test-react/Collections/OtherBrands.png"
           draggable="false"
           alt=""
         />
@@ -126,7 +126,7 @@ const After = () => {
       </div>
       <div className="image">
         <img
-          src="src/assets/Collections/Focused.png"
+          src="/Dev_test-react/Collections/Focused.png"
           draggable="false"
           alt=""
         />

@@ -13,7 +13,7 @@ const Contacts = () => {
         </div>
         <Container
           className={classes.email}
-          image="src/assets/Contact/email1.svg"
+          image="/Dev_test-react/assets/Contact/email1.svg"
         >
           <p className="b2">For customer support: </p>
           <p className="b2">For sales inquiries: </p>
@@ -30,7 +30,7 @@ const Contacts = () => {
         </Container>
         <Container
           className={classes.adress}
-          image="src/assets/Contact/adress.svg"
+          image="/Dev_test-react/assets/Contact/adress.svg"
         >
           <p className="b2">Mailing Address:</p>
           <a href="https://maps.app.goo.gl/W4hFfYooXiB7aAoE6" className="b2" target="_blank">

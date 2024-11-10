@@ -7,7 +7,7 @@ const FlexContainer = () => {
         <FlexWrap
           className={classes.row}
           title="Our Company"
-          source="src/assets/AboutUs/photos_right.png"
+          source="/Dev_test-react/AboutUs/photos_right.png"
         >
           <p className="b2">
             GOpure was launched by Bloc Enterprises, a specialized distribution
@@ -32,7 +32,7 @@ const FlexContainer = () => {
         <FlexWrap
           className={classes["row-reverse"]}
           title="About PuriBloc"
-          source="src/assets/AboutUs/photos_left.png"
+          source="/Dev_test-react/AboutUs/photos_left.png"
         >
           <p className="b2">
             PuriBloc is the innovative water purification, preservation
