@@ -12,6 +12,7 @@ const GetData = ({ name, id = null }) => {
         setItems(id ? [data] : data);
       } catch (error) {
         console.error("Error fetching items:", error);
+        setLoading(true);
       } finally {
         setLoading(false);
         console.log(`Data has been uploaded`);
