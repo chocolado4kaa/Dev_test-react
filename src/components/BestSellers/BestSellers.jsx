@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import Item from "../Items/Item";
-import "./BestSellers.scss";
+import "./bestSellers.scss";
 import GetData from "../GetData";
 import { SectionTitle as Title, Loading } from "../Components";
 
