@@ -9,7 +9,7 @@ import {
 } from "../Components";
 import GetData from "../GetData";
 import Item from "../Items/Item";
-import "./ITemDetails.scss";
+import "./ItemDetails.scss";
 import titleClasses from "../SectionTitle/SectionTitle.module.scss";
 import { useState } from "react";
 
