@@ -24,6 +24,7 @@ const Item = ({
 
   const goToItemDetails = (id) => {
     navigate(`/item/${id}`, { replace: true });
+    window.location.reload();
 };
 
 
