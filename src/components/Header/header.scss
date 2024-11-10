@@ -257,7 +257,9 @@
       height: 30px;
       margin: 0 20px;
       .burger {
-        background: url("/public/IC_Burger.svg") no-repeat center center;
+        background: url("/public/IC_Burger.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
         background-size: contain;
         cursor: pointer;
         transition: all 0.5s;
