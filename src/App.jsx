@@ -7,7 +7,7 @@ import ItemDetails from "./components/ItemDetails/ItemDetails";
 
 const App = () => {
   return (
-      <Router basename="/Dev_test-react">
+      <Router basename="https://chocolado4kaa.github.io/Dev_test-react">
         <Routes>
           <Route path="/" element={<Root />} />
           <Route path="/About" element={<AboutUs />} />
