@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 import "./Item.scss";
+import { Link } from "react-router-dom";
 
 const Item = ({
   discount,
@@ -22,9 +23,9 @@ const Item = ({
   const navigate = useNavigate();
 
   const goToItemDetails = (id) => {
-    navigate(`/Dev_test-react/item/${id}`, { replace: true });
-    window.location.reload();
-  };
+    navigate(`/item/${id}`, { replace: true });
+};
+
 
   return (
     <ItemContainer Sold={Soldout}>
