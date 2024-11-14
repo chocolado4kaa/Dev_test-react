@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const GetData = ({ name, id = null }) => {
-  const dataSource = id ? `http://localhost:3000/${name}/${id}` : `http://localhost:3000/${name}`;
+  const dataSource = id ? `https://dev-test-api-1gmm.onrender.com/${name}/${id}` : `https://dev-test-api-1gmm.onrender.com/${name}`;
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
