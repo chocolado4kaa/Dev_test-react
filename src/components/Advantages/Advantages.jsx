@@ -1,6 +1,7 @@
 import GetData from "../GetData";
 import Loading from "../Loading";
 import classes from "./advantages.module.scss";
+import { Resp } from "../Components";
 
 const Advantages = () => {
   const { items, loading } = GetData({ name: "advantages" });
@@ -26,7 +27,7 @@ const Item = ({ preview, children }) => {
         <img src={preview} alt={preview}></img>
       </div>
       <div className={classes.textbar}>
-        <p className="p2">{children}</p>
+        <Resp Tag="p" Class="p2" altClass="System S12_L20 UpC">{children}</Resp>
       </div>
     </div>
   );

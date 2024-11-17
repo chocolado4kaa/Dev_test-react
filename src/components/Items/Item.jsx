@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 import "./Item.scss";
 import { Link } from "react-router-dom";
+import { Resp } from "../Components";
 
 const Item = ({
   discount,
@@ -12,7 +13,7 @@ const Item = ({
   price,
   sizes,
   children,
-  id
+  id,
 }) => {
   const HasDiscount = discount > 0;
   const SellingFast = sellingFast;
@@ -25,8 +26,7 @@ const Item = ({
   const goToItemDetails = (id) => {
     navigate(`/item/${id}`, { replace: true });
     window.location.reload();
-};
-
+  };
 
   return (
     <ItemContainer Sold={Soldout}>
@@ -51,9 +51,12 @@ const Item = ({
                       key={size}
                       className={`${!sizes.includes(size) ? "sold" : ""}`}
                       Onclick={
-                        !sizes.includes(size) ? null : () => {
-                          goToItemDetails(id)
-                          console.log(`${title} ${size}`) }                     
+                        !sizes.includes(size)
+                          ? null
+                          : () => {
+                              goToItemDetails(id);
+                              console.log(`${title} ${size}`);
+                            }
                       }
                     >
                       {size}
@@ -68,7 +71,9 @@ const Item = ({
         </div>
         <div className="description">
           <div className="textbar">
-            <p className="p2 item_title">{title}</p>
+            <Resp Tag="p" Class="p2 item_title" altClass="System S12_L20">
+              {title}
+            </Resp>
             <ItemPrice
               _HasDiscount={HasDiscount}
               _price={price}
@@ -97,7 +102,9 @@ const ItemContainer = ({ children, Sold }) => {
 const TagsDiv = ({ Color, children }) => {
   return (
     <div className={Color}>
-      <p className="S12_L20 UpC">{children}</p>
+      <Resp Tag="p" Class="S12_L20 UpC" altClass="S10_L16 UpC">
+        {children}
+      </Resp>
     </div>
   );
 };

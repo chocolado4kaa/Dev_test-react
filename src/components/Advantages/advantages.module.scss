@@ -49,12 +49,22 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .adv-wrap{
-        flex-wrap: wrap;
-        margin: 10px auto;
-        .adv-item{
-            width: 30%;
-            margin: 10px 0;
-        }
+  .adv-wrap {
+    flex-wrap: wrap;
+    margin: 10px auto;
+    .adv-item {
+      width: 30%;
+      margin: 10px 0;
     }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .adv-wrap {
+    align-items: flex-start;
+    justify-content: space-around;
+    .adv-item {
+      margin: 10px 20px;
+    }
+  }
 }
