@@ -97,3 +97,9 @@
     transform: translateY(-30px);
   }
 }
+
+@media screen and (max-width: 425px) {
+  .message_content{
+    min-width: 300px;
+  }
+}

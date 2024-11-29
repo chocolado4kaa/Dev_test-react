@@ -65,7 +65,9 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
   &::before {
+    z-index: -1;
     position: absolute;
     left: 0;
     top: 50%;
@@ -143,5 +145,11 @@ section {
 @media screen and (max-width: 1024px) {
   .advantages {
     height: max-content;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Container_ToTheRight {
+    margin-left: auto !important;
   }
 }

@@ -179,30 +179,53 @@
 }
 
 @media screen and (max-width: 680px) {
-  .collections .wrap .strong .tabs_container .tabs a::after {
-    left: -10%;
-    width: 110%;
+  .collections {
+    height: 750px;
+    .wrap .strong .tabs_container .tabs a::after {
+      left: -10%;
+      width: 110%;
+    }
   }
   .arrows,
   .BeforeAfter-element .moving_streak .arrows {
     cursor: pointer;
     width: 50px;
     height: 50px;
-    &::before, &::after{
+    &::before,
+    &::after {
       height: 15px;
       width: 15px;
       background-size: contain;
     }
   }
-  .BeforeAfter-element{
-    .moving_streak{
+  .BeforeAfter-element {
+    .moving_streak {
       width: 3px;
     }
-    .after .title{
+    .after .title {
       right: 30px;
-      .focused-Logo{
+      .focused-Logo {
         width: 150px;
       }
     }
-  } 
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .collections .wrap .strong{
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .before .image, .after .image{
+    display: flex;
+    align-items: flex-end;
+    img{
+      height: 80%;
+    }
+  }
+  .collections .wrap .strong {
+    width: 260px;
+}
 }

@@ -149,7 +149,7 @@ input {
       bottom: auto;
       top: -50px;
       left: auto;
-      right: -130px;
+      right: -170px;
       transform: rotate(6deg);
     }
     &::after{
@@ -176,6 +176,24 @@ input {
     }
     p {
       width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  footer{
+    height: 750px;
+    .footer-wrap{
+      .top-part{
+        height: max-content;
+        .Footer-nav{
+          flex-direction: column;
+          .frame{
+            width: 80%;
+            margin: 12px 0;
+          }
+        }
+      }
     }
   }
 }
