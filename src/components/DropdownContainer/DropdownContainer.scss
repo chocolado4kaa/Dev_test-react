@@ -68,3 +68,129 @@
     }
   }
 }
+
+.sortType .dropdown-list {
+  left: auto;
+  right: 0px;
+}
+
+.dropdown-list {
+  .list-head {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    position: relative;
+    padding: 0 20px;
+    &::before {
+      position: absolute;
+      content: " ";
+      bottom: 0px;
+      width: 100%;
+      left: 0px;
+      height: 1px;
+      background: #e3e3e3;
+    }
+    .part {
+      font-size: 12px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      &.reset {
+        position: relative;
+        cursor: pointer;
+        &::before {
+          position: absolute;
+          bottom: 10px;
+          width: 120%;
+          left: -10%;
+          content: " ";
+          background: #605e5c;
+          height: 1px;
+        }
+      }
+    }
+  }
+  .checkboxes,
+  .radioInputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    label {
+      display: flex;
+      justify-content: flex-start;
+      color: #212322;
+      cursor: pointer;
+      input {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    input[type="range"] {
+      width: 200px;
+      margin: 10px 0 0;
+    }
+    .submit-button {
+      width: 120px;
+      margin: 0 auto;
+      border: 0px;
+      border-radius: 5px;
+      background: #efefef;
+      height: 27px;
+      transition: all 0.5s;
+      cursor: pointer;
+      &:hover {
+        transform: translateY(-2px) scale(0.99);
+        background: #e3e3e3;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .filter{
+    height: max-content;
+    min-height: 42px;
+    background: #fafaf8;
+    overflow: hidden;
+    .filter-arrow.rotated {
+      transform: translateY(-50%) rotate(270deg);
+      right: 211px;
+  }
+  }
+  .dropdown-list {
+    position: static;
+    min-height: 42px;
+    height: 100px;
+    overflow: hidden;
+    width: 180px;
+    .list-head{
+      padding: 0px;
+    }
+    .checkboxes,
+    .radioInputs {
+      flex-wrap: wrap;
+      height: 50%;
+      min-height: 50px;
+      position: relative;
+      .submit-button{
+        margin: auto;
+        position: absolute;
+        top: -45px;
+        right: 10px;
+      }
+      input[type="range"] {
+        width: 150px;
+        ~ p {
+          position: absolute;
+          top: 15px;
+        }
+      }
+    }
+    &.hidden {
+      height: 42px;
+    }
+  }
+  .sortType .dropdown-list .radioInputs{
+    flex-wrap: nowrap;
+  }
+}

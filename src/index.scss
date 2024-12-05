@@ -88,7 +88,8 @@ section {
 }
 
 .ContactUs_Bg {
-  background: url("/Dev_test-react/Contact/Hero_banner.png") no-repeat bottom right,
+  background: url("/Dev_test-react/Contact/Hero_banner.png") no-repeat bottom
+      right,
     #b7b7b7;
   height: 500px;
   background-position: 90% 50px;
@@ -120,7 +121,7 @@ section {
   body {
     overflow-x: hidden;
   }
-  html{
+  html {
     background: #000;
   }
 }
@@ -145,6 +146,12 @@ section {
 @media screen and (max-width: 1024px) {
   .advantages {
     height: max-content;
+  }
+  .Collection_Bg {
+    z-index: 2;
+    .HeroSection_title {
+      margin: 10% 0 0 40%;
+    }
   }
 }
 

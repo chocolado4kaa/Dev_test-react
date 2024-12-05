@@ -9,7 +9,7 @@ const Filter = ({
   onToggle,
   title,
   optionsCaption,
-  selectedOptions, // Получаем выбранные опции
+  selectedOptions,
 }) => {
   const checkboxesRef = useRef({});
   
@@ -39,7 +39,7 @@ const Filter = ({
 
   return (
     <DropdownContainer
-      title={`${title} ${OptinsLength > 0 ? `(${OptinsLength})` : ""}`}
+      title={`${title} ${OptinsLength > 0 ? `(${OptinsLength})` : "   "}`}
       onToggle={onToggle}
       isOpen={isOpen}
     >
@@ -58,7 +58,6 @@ const Filter = ({
             onChange={handleOptionChange}
             ref={(el) => {
               checkboxesRef.current[option] = el;
-              // Устанавливаем состояние чекбоксов на основании выбранных опций
               if (el && selectedOptions.includes(option)) {
                 el.checked = true;
               }

@@ -25,13 +25,13 @@
   }
 }
 
-.Collection {
+.shopSection .Collection {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   .item {
-    margin: 15px 8px !important;
+    margin: 15px 8px;
     width: 430px;
     height: max-content;
     .preview {
@@ -65,84 +65,7 @@
   }
 }
 
-.sortType .dropdown-list {
-  left: auto;
-  right: 0px;
-}
-
-.dropdown-list {
-  .list-head {
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-    position: relative;
-    padding: 0 20px;
-    &::before {
-      position: absolute;
-      content: " ";
-      bottom: 0px;
-      width: 100%;
-      left: 0px;
-      height: 1px;
-      background: #e3e3e3;
-    }
-    .part {
-      font-size: 12px;
-      line-height: 18px;
-      display: flex;
-      align-items: center;
-      &.reset {
-        position: relative;
-        cursor: pointer;
-        &::before {
-          position: absolute;
-          bottom: 10px;
-          width: 120%;
-          left: -10%;
-          content: " ";
-          background: #605e5c;
-          height: 1px;
-        }
-      }
-    }
-  }
-  .checkboxes,
-  .radioInputs {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    label {
-      display: flex;
-      justify-content: flex-start;
-      color: #212322;
-      cursor: pointer;
-      input {
-        width: 16px;
-        height: 16px;
-      }
-    }
-    input[type="range"] {
-      width: 200px;
-      margin: 10px 0 0;
-    }
-    .submit-button {
-      width: 120px;
-      margin: 0 auto;
-      border: 0px;
-      border-radius: 5px;
-      background: #efefef;
-      height: 27px;
-      transition: all 0.5s;
-      cursor: pointer;
-      &:hover {
-        transform: translateY(-2px) scale(0.99);
-        background: #e3e3e3;
-      }
-    }
-  }
-}
-
-.hover_container button {
+.shopSection .hover_container button {
   padding: 0px 0 4px;
   span {
     font-size: 30px;
@@ -154,17 +77,122 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .Collection .item {
-    width: 350px;
-    .preview {
-      height: 450px;
+  .shopSection {
+    .Collection .item {
+      width: 350px;
+      .preview {
+        height: 450px;
+      }
+    }
+    .items {
+      max-height: 1080px;
     }
   }
-  .shopSection .items {
-    max-height: 1080px;
-}
 }
 
 @media screen and (max-width: 1200px) {
-  
+  .shopSection {
+    padding: 2%;
+    .filters-container {
+      flex-wrap: wrap;
+    }
+    .Collection .item {
+      width: 300px;
+      margin: 10px 3px;
+      .preview-image div {
+        background-size: auto 100%;
+      }
+    }
+    .items {
+      max-height: 1050px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .shopSection {  //sizes 
+    padding: 2% 0;
+    .filters-container {
+      height: 350px;
+      margin: 0 0px 20px 8px;
+      padding-left: 2%;
+      position: relative;
+    }
+    .Collection {
+      justify-content: space-evenly;
+      .item .preview-image div {
+        background-size: auto 100%;
+      }
+    }
+    .items {
+      max-height: 1580px;
+      padding: 0 2%;
+      &.items-expanded {
+        max-height: 4210px;
+      }
+    }
+  }
+  .filtration { //filtration settings
+    width: 100%;
+    .frame {
+      width: 100%;
+    }
+    .filters {
+      width: 100%;
+      height: 135px;
+      overflow: scroll hidden;
+      &::-webkit-scrollbar{
+        display: none;
+      }
+      .scrollbar {
+        width: max-content;
+        display: flex;
+        justify-content: space-around;
+        height: 60px;
+        .filter:last-child{
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  .sorting{ //sorting settings 
+    width: 100%;
+    .frame {
+      height: 170px;
+    }
+  } 
+
+  .shopSection { //before, after el
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    .filters-container,
+    .items,
+    .items_more {
+      z-index: 1;
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      content: " ";
+      background: url("/Dev_test-react/Rectangle_withCircles.svg") no-repeat
+        center center;
+      background-size: contain;
+      z-index: -1;
+    }
+    &::before {
+      width: 300px;
+      height: 300px;
+      right: -150px;
+      top: -80px;
+      transform: rotate(77deg);
+    }
+    &::after {
+      width: 280px;
+      height: 280px;
+      left: 40%;
+      top: 100px;
+      transform: rotate(20deg);
+    }
+  }
 }

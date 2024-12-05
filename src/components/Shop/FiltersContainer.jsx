@@ -35,31 +35,33 @@ const FiltersContainer = ({ updateFilter, items, filters }) => {
           <p className="p1">Filtered By</p>
         </div>
         <div className="filters">
-          {filtersData.map((_filter, index) => {
-            return _filter.type === "price" ? (
-              <PriceFilter
-                key={index}
-                updateFilter={updateFilter}
-                onToggle={() => handleToggle(index)}
-                isOpen={openFilter === index}
-                title={_filter.title}
-              />
-            ) : (
-              <Filter
-                key={index}
-                isOpen={openFilter === index}
-                onToggle={() => handleToggle(index)}
-                type={_filter.type}
-                options={_filter.options}
-                onChange={handleFilterChange}
-                title={_filter.title}
-                optionsCaption={
-                  _filter.type === "soldout" ? availabilityCaptions : null
-                }
-                selectedOptions={filters[_filter.type] || []} // Передаем выбранные опции
-              />
-            );
-          })}
+          <div className="scrollbar">
+            {filtersData.map((_filter, index) => {
+              return _filter.type === "price" ? (
+                <PriceFilter
+                  key={index}
+                  updateFilter={updateFilter}
+                  onToggle={() => handleToggle(index)}
+                  isOpen={openFilter === index}
+                  title={_filter.title}
+                />
+              ) : (
+                <Filter
+                  key={index}
+                  isOpen={openFilter === index}
+                  onToggle={() => handleToggle(index)}
+                  type={_filter.type}
+                  options={_filter.options}
+                  onChange={handleFilterChange}
+                  title={_filter.title}
+                  optionsCaption={
+                    _filter.type === "soldout" ? availabilityCaptions : null
+                  }
+                  selectedOptions={filters[_filter.type] || []}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
