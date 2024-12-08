@@ -10,6 +10,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 const Shop = () => {
   const { items, loading } = GetData({ name: "items" });
   const [isExpanded, setIsExpanded] = useState(false);
+  const [filtersView, setFiltersView] = useState(true);
   const [filters, setFilters] = useState({
     size: "",
     type: "",
@@ -24,9 +25,9 @@ const Shop = () => {
 
   const updateUrl = (newFilters) => {
     const searchParams = new URLSearchParams(location.search);
-    Object.keys(newFilters).forEach(key => {
+    Object.keys(newFilters).forEach((key) => {
       if (newFilters[key].length > 0) {
-        searchParams.set(key, newFilters[key].join(','));
+        searchParams.set(key, newFilters[key].join(","));
       } else {
         searchParams.delete(key);
       }
@@ -37,15 +38,22 @@ const Shop = () => {
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
     const newFilters = {
-      size: searchParams.get('size') ? searchParams.get('size').split(',') : [],
-      type: searchParams.get('type') ? searchParams.get('type').split(',') : [],
-      color: searchParams.get('color') ? searchParams.get('color').split(',') : [],
-      soldout: searchParams.get('soldout') ? searchParams.get('soldout').split(',') : [],
+      size: searchParams.get("size") ? searchParams.get("size").split(",") : [],
+      type: searchParams.get("type") ? searchParams.get("type").split(",") : [],
+      color: searchParams.get("color")
+        ? searchParams.get("color").split(",")
+        : [],
+      soldout: searchParams.get("soldout")
+        ? searchParams.get("soldout").split(",")
+        : [],
     };
     setFilters(newFilters);
   }, [location.search]);
-  
-  const filteredItems = useMemo(() => filterItems(items, filters), [items, filters]);
+
+  const filteredItems = useMemo(
+    () => filterItems(items, filters),
+    [items, filters]
+  );
 
   useEffect(() => {
     const [sortType, sortOrder] = sortOption.split("_");
@@ -70,13 +78,41 @@ const Shop = () => {
     setIsExpanded(!isExpanded);
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setFiltersView(window.innerWidth >= 640);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const HandleShowFilters = () => {
+    setFiltersView(!filtersView);
+  };
+
   if (loading) return <Loading />;
 
   return (
     <section className="shopSection">
-      <div className="filters-container">
-      <FiltersContainer updateFilter={updateFilter} items={filteredItems} filters={filters} />
-
+      <Button
+          className={`show_filters ${filtersView ? "clicked" : ""}`}
+          Onclick={HandleShowFilters}
+          Width={"90%"}
+        >
+          {!filtersView ? ("Filter and Sort By") : ("Hide Filters and Sort")}
+        </Button>
+      <div className={`filters-container ${filtersView ? "showed" : "hidden"}`}>
+        <FiltersContainer
+          updateFilter={updateFilter}
+          items={filteredItems}
+          filters={filters}
+        />
         <SortContainer updateSort={updateSort} />
       </div>
       <div className={`items ${isExpanded ? "items-expanded" : ""}`}>
@@ -126,10 +162,9 @@ const matchFilter = (filterValues, itemValue, comparisonFn) => {
 };
 
 const filterItems = (items, filters) => {
-  
   const calculateDiscountedPrice = (price, discount) => {
     if (!discount) return price;
-    return price - (price * (discount / 100));
+    return price - price * (discount / 100);
   };
 
   return items.filter((item) => {
@@ -147,7 +182,9 @@ const filterItems = (items, filters) => {
     const discountedPrice = calculateDiscountedPrice(item.price, item.discount);
     const matchPrice = filters.price ? discountedPrice <= filters.price : true;
 
-    return matchSize && matchType && matchColor && matchAvailability && matchPrice;
+    return (
+      matchSize && matchType && matchColor && matchAvailability && matchPrice
+    );
   });
 };
 
@@ -159,7 +196,9 @@ const sortItems = (items, sortType, sortOrder) => {
     const finalPriceB = b.price * (1 - b.discount / 100);
 
     if (sortType === "price") {
-      return isAscending ? finalPriceA - finalPriceB : finalPriceB - finalPriceA;
+      return isAscending
+        ? finalPriceA - finalPriceB
+        : finalPriceB - finalPriceA;
     } else if (sortType === "sale") {
       return b.discount - a.discount;
     }

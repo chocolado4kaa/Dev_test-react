@@ -62,6 +62,11 @@
     justify-content: space-between;
     height: auto;
     width: 600px;
+    .scrollbar{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -193,6 +198,90 @@
       left: 40%;
       top: 100px;
       transform: rotate(20deg);
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .shopSection{
+    .filters-container{
+      align-content: flex-start;
+      overflow: hidden;
+      transition: all 1s;
+      &.hidden{
+        height: 0px;
+      }
+      &.showed{
+        height: 460px;
+      }
+    }
+    .show_filters{
+      width: 100%;
+      display: flex;
+      margin: 20px 0;
+      justify-content: center;
+      &.clicked button{
+        width: 94% !important;
+        &::before{
+          transform: translateY(5px) !important;
+        }
+      }
+      button:hover{
+        transform: translateY(0px);
+        opacity: 1;
+        &::before{
+          transform: translateY(0px);
+        }
+      }
+    }
+    .items{
+      max-height: max-content;
+      margin-bottom: 20px;
+    }
+    .items_more{
+      display: none;
+    }
+    .Collection{
+      .item{
+        min-width: 164px;
+        width: 164px;
+        .preview{
+          height: 218px;
+        }
+      }
+    }
+  }
+  .filtration{
+    height: max-content;
+    .filters, .frame{
+      height: max-content;
+      .scrollbar{
+        height: 176px;
+      }
+    }
+  }
+  .sorting{
+    .frame{
+      width: 96.5%;
+      height: max-content;
+    }
+    .filter{
+      width: 100%;
+      .dropdown-list{
+        width: 100%;
+        .radioInputs{
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 60%;
+          margin: 0 auto;
+          justify-content: space-evenly;
+          label{
+            width: 150px;
+            align-items: center;
+            margin: 5px 0;
+          }
+        }
+      }
     }
   }
 }

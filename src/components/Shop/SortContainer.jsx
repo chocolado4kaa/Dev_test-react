@@ -1,12 +1,29 @@
 import GetData from "../GetData";
 import { Loading, DropdownContainer } from "../Components";
-import { forwardRef, useRef, useState } from "react";
+import { forwardRef, useEffect, useRef, useState } from "react";
 
 const SortContainer = ({ updateSort }) => {
   const { items: sortData, loading } = GetData({ name: "sortData" });
   const [openSorter, setOpenSorter] = useState(false);
   const [selectedOption, setSelectedOption] = useState("default_byId");
   const radioRef = useRef({});
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 640) {
+        setOpenSorter(true);
+      } else {
+        setOpenSorter(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleOptionChange = (event) => {
     const { name, value } = event.target;

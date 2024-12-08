@@ -1,15 +1,38 @@
 import Filter from "./Filters";
 import GetData from "../GetData";
 import { Loading } from "../Components";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PriceFilter from "./PriceFilter";
 
 const FiltersContainer = ({ updateFilter, items, filters }) => {
   const { items: filtersData, loading } = GetData({ name: "filtersData" });
   const [openFilter, setOpenFilter] = useState(null);
+  const [mobileContainer, setMobileContainer] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 640) {
+        setMobileContainer(true);
+        setOpenFilter(0);
+      } else {
+        setOpenFilter(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
   const handleToggle = (id) => {
-    setOpenFilter((prevId) => (prevId === id ? null : id));
+    if(mobileContainer) {
+      setOpenFilter((prevId) => (prevId === id ? id : id));
+    }
+    else setOpenFilter((prevId) => (prevId === id ? null : id));
   };
 
   const handleFilterChange = (e) => {

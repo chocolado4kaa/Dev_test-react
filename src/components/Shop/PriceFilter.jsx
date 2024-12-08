@@ -40,7 +40,7 @@ const PriceFilter = ({ updateFilter, isOpen, onToggle, title }) => {
 
   return (
     <DropdownContainer title={title} onToggle={onToggle} isOpen={isOpen}>
-      <div className="list-head">
+      <div className="list-head price">
         <div className="part reset" onClick={handleReset}>
           Reset
         </div>
