@@ -160,3 +160,36 @@ section {
     margin-left: auto !important;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .Collection_Bg {
+    background: #e3e3e3 url("/Dev_test-react/Collection/man-port1.png");
+    height: 700px;
+    background-size: auto 80%;
+    background-position: top center;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    .HeroSection_title {
+      margin: 0% 0 4% 10%;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Collection_Bg .HeroSection_title {
+    margin: 0% 0 6% 10%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Collection_Bg {
+    background: #e3e3e3 url("/Dev_test-react/Collection/man-port1.png");
+    height: 430px;
+    background-size: 430px auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    .HeroSection_title {
+      margin: 0% 0 0% 10%;
+    }
+  }
+}

@@ -80,7 +80,7 @@ const Item = ({
               _newPrice={newPrice}
             />
           </div>
-          <Button>
+          <Button Onclick={() => goToItemDetails(id)}>
             <div className="buy-button" title="buy"></div>
           </Button>
         </div>

@@ -15,7 +15,7 @@
       margin: auto 0;
     }
     .scroll-container {
-      overflow-x: scroll;
+      overflow: scroll hidden;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -65,8 +65,23 @@
   }
 }
 
-@media screen and (max-width:768px) {
-  .best-seller{
+@media screen and (max-width: 768px) {
+  .best-seller {
     height: 600px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .best-seller {
+    height: 500px;
+    .item {
+      min-width: 200px;
+      .description{
+        height: 60px;
+      }
+      .preview {
+        height: 280px;
+      }
+    }
   }
 }

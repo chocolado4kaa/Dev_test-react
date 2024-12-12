@@ -1,4 +1,4 @@
-import { Header, Footer, HeroSection, Shop } from "./Components";
+import { Header, Footer, HeroSection, Shop, Resp } from "./Components";
 
 const CollectionPage = () => {
   return (
@@ -6,7 +6,7 @@ const CollectionPage = () => {
       <Header />
       <HeroSection BgClass="Collection_Bg" className="Container_OnlyTitle">
         <div className="HeroSection_title">
-          <h3 className="S36_L46">Men’s Crew Necks</h3>
+          <Resp Tag="h3" Class="S36_L46" altClass="Mobile S26" targetWidth="640">Men’s Crew Necks</Resp>
         </div>
       </HeroSection>
       <Shop />

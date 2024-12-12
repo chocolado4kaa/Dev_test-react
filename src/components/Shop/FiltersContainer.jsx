@@ -15,7 +15,7 @@ const FiltersContainer = ({ updateFilter, items, filters }) => {
         setMobileContainer(true);
         setOpenFilter(0);
       } else {
-        setOpenFilter(false);
+        setOpenFilter(null);
       }
     };
 
@@ -29,10 +29,10 @@ const FiltersContainer = ({ updateFilter, items, filters }) => {
 
 
   const handleToggle = (id) => {
-    if(mobileContainer) {
-      setOpenFilter((prevId) => (prevId === id ? id : id));
-    }
-    else setOpenFilter((prevId) => (prevId === id ? null : id));
+    setOpenFilter((prevId) => {
+      if(mobileContainer) return id;
+      return prevId === id ? null : id;
+    });
   };
 
   const handleFilterChange = (e) => {
