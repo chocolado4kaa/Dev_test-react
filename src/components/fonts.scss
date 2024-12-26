@@ -163,7 +163,7 @@ h5 {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
-  h3.S26 {
+  h3.S26, .itemDetails_title {
     @include inter-normal;
     font-size: 26px;
     font-weight: 700;

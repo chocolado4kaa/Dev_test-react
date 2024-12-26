@@ -71,7 +71,7 @@ const Item = ({
         </div>
         <div className="description">
           <div className="textbar">
-            <Resp Tag="p" Class="p2 item_title" altClass="System S12_L20">
+            <Resp Tag="p" Class="p2 item_title" altClass="System S12_L20 item_title">
               {title}
             </Resp>
             <ItemPrice

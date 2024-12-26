@@ -56,14 +56,14 @@
     display: flex;
     flex-direction: column;
     padding: 5px 0;
-    img{
+    img {
       background-size: contain;
       width: 95px;
       height: 120px;
       margin: 0 0 10px;
       transition: all 0.5s;
       cursor: pointer;
-      &:hover{
+      &:hover {
         transform: scale(0.99) rotate(2deg);
       }
     }
@@ -266,9 +266,9 @@
           max-height: 0px;
           user-select: none;
         }
-        ul{
+        ul {
           padding: 0px;
-          li{
+          li {
             color: #605e5c;
             margin-left: 30px;
           }
@@ -278,15 +278,92 @@
   }
 }
 
-@media screen and (max-width: 1370px){
+@media screen and (max-width: 1370px) {
   .item .preview .preview-image div {
     background-size: auto 100%;
     background-position: center;
-}
+  }
 }
 @media screen and (max-width: 1300px) {
   .photos_frame .preview .item {
     margin: 0;
     height: 500px;
+  }
 }
+@media screen and (max-width: 950px) {
+  .photos_frame .preview .item {
+    height: 450px;
+  }
+  .description_frame .container {
+    width: 90%;
+  }
+  .Item_details {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Item_details {
+    height: 640px;
+    .details_wrap {
+      .photos_frame {
+        width: 400px;
+      }
+    }
+  }
+  .photos_frame {
+    flex-direction: column;
+    align-items: center;
+    .preview {
+      width: 95%;
+      padding: 0px;
+      .item {
+        height: 420px;
+        .preview .preview-image div {
+          background-size: auto 105%;
+        }
+      }
+    }
+    .other_photos {
+      flex-direction: row;
+      justify-content: center;
+      img {
+        margin: 0px 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .Item_details {
+    .details_wrap {
+      width: 95%;
+    }
+  }
+  .description_frame .container {
+    width: 98%;
+  }
+  .main_item_content {
+    .item,
+    .item .item-wrap {
+      .textbar {
+        .price p {
+          font-size: 16px;
+          line-height: 22px;
+        }
+        .item_title {
+          @extend .itemDetails_title;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 730px) {
+  .Item_details .details_wrap .photos_frame {
+    width: 300px;
+    .preview .item {
+      height: 380px;
+    }
+    .other_photos {
+      display: none;
+    }
+  }
 }
