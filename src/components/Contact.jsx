@@ -1,4 +1,4 @@
-import { Header, Footer, HeroSection, Contacts } from "./Components";
+import { Header, Footer, HeroSection, Contacts, Resp } from "./Components";
 
 const Contact = () => {
   return (
@@ -6,7 +6,7 @@ const Contact = () => {
       <Header />
       <HeroSection BgClass="ContactUs_Bg" className="Container_OnlyTitle">
         <div className="HeroSection_title">
-          <h1 className="Headline">Contact Us</h1>
+          <Resp Tag="h1" Class="Headline" altClass="Mobile">Contact Us</Resp>
         </div>
       </HeroSection>
       <Contacts />

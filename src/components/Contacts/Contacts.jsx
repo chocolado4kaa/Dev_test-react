@@ -1,42 +1,43 @@
 import classes from "./contacts.module.scss";
+import {Resp} from "../Components.js"
 
 const Contacts = () => {
   return (
     <section className={classes.contactsSection}>
       <div className={classes.contacts_wrap}>
         <div className={classes.textBox}>
-          <p className="b1">
+          <Resp Tag="p" Class="b1" altClass="S18_L26">
             We appreciate your business and want to ensure you are satisfied
             with your GOpure product! Please contact us with any questions you
             have about the product, or if we can help you in any way.
-          </p>
+          </Resp>
         </div>
         <Container
           className={classes.email}
           image="/Dev_test-react/Contact/email1.svg" 
         >
-          <p className="b2">For customer support: </p>
-          <p className="b2">For sales inquiries: </p>
-          <p className="b2">For press inquiries: </p>
-          <a href="mailto:contact@gopurepod.com" className="b2">
+          <Resp Tag="p" Class="b2" altClass="p2">For customer support: </Resp>
+          <Resp Tag="a" Class="b2" altClass="p2" href="mailto:contact@gopurepod.com">
             contact@gopurepod.com
-          </a>
-          <a href="mailto:jim@blocenterprises.com" className="b2">
+          </Resp>
+          <Resp Tag="p" Class="b2" altClass="p2">For sales inquiries: </Resp>
+          <Resp Tag="a" Class="b2" altClass="p2" href="mailto:jim@blocenterprises.com">
             jim@blocenterprises.com
-          </a>
-          <a href="mailto:info@blocenterprises.com" className="b2">
+          </Resp>
+          <Resp Tag="p" Class="b2" altClass="p2">For press inquiries: </Resp>
+          <Resp Tag="a" Class="b2" altClass="p2" href="mailto:info@blocenterprises.com">
             info@blocenterprises.com
-          </a>
+          </Resp>
         </Container>
         <Container
           className={classes.adress}
           image="/Dev_test-react/Contact/adress.svg"
         >
-          <p className="b2">Mailing Address:</p>
-          <a href="https://maps.app.goo.gl/W4hFfYooXiB7aAoE6" className="b2" target="_blank">
+          <Resp Tag="p" Class="b2" altClass="p2">Mailing Address:</Resp>
+          <Resp Tag="a" href="https://maps.app.goo.gl/W4hFfYooXiB7aAoE6" Class="b2" altClass="p2" target="_blank">
             Bloc Enterprises, LLC, 11 Grumman Hill Road, Suite 1A
-          </a>
-          <p className="b2">Wilton, CT 06897</p>
+          </Resp>
+          <Resp Tag="p" Class="b2" altClass="p2">Wilton, CT 06897</Resp>
         </Container>
       </div>
     </section>

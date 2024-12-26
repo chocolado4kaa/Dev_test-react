@@ -161,6 +161,12 @@ section {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .ContactUs_Bg{
+    height: 400px;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .Collection_Bg {
     background: #e3e3e3 url("/Dev_test-react/Collection/man-port1.png");
